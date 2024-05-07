@@ -4,10 +4,14 @@ body {
     font-family: 'Roboto';
 }
 
-.header, .footer, .hero {
+.header-container, .footer, .hero {
     background-color: #1f2937;
+    
 }
-
+.header-container{
+    display: flex;
+    justify-content: center;
+}
 .header, .footer{
     display: flex;
     align-items: center;
@@ -15,6 +19,7 @@ body {
 }
 
 .header{
+    width: 70%;
     justify-content: space-between;
 }
 
@@ -47,6 +52,8 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 35%;
+    gap: 16px;
 }
 .hero-heading {
     font-size: 48px;
@@ -71,7 +78,7 @@ li{
 }
 .hero-image{
     display: flex;
-    width: 450px;
+    width: 35%;
     height: 200px;
     background-color: #e5e7eb;
     justify-content: center;
@@ -88,10 +95,13 @@ li{
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
+    padding: 48px;
 }
 .random-boxes{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
 }
 
 .random-container{
@@ -99,6 +109,8 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 12px;
+    width: fit-content;
 }
 .card{
     width: 200px;
@@ -107,20 +119,26 @@ li{
     border-radius: 8px;
 }
 
-random-text{
-    display: flex;
+.random-text{
     font-size: 18px;
-    color: #e5e7eb;
-    justify-content: center;
+    color: #1f2937;
+    max-width: 200px;
 }
 .quote-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #e5e7eb;
     padding: 72px;
 }
 .quote{
+    display: flex;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
+    justify-content: center;
+    width: 70%;
 }
 .author {
     display: flex;
@@ -128,6 +146,7 @@ random-text{
     font-weight: 900;
     color: #1f2937;
     justify-content: right;
+    width: 70%;
 }
 
 .cta-section {
@@ -140,10 +159,12 @@ random-text{
     background-color: #3882f6;
     display: flex;
     flex-direction: row;
-    padding: 48px 120px;
+    padding: 48px 0;
     align-items: center;
+    justify-content:center ;
     gap: 48px;
     border-radius: 8px;
+    width: 70%;
 }
 
 .cta-heading{
@@ -162,6 +183,7 @@ random-text{
 }
 
 .footer{
+    display: flex;
     justify-content: center;
     font-size: 18px;
     color: #e5e7eb;
